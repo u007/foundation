@@ -1,0 +1,54 @@
+@import "global";
+
+//
+// @name _sub-nav.scss
+// @dependencies _global.scss
+//
+
+//
+// @variables
+//
+
+$include-html-slider-widget-classes: $include-html-classes !default;
+
+// These variabels define the slider bar styles
+$slider-widget-bar-width: 100% !default;
+$slider-widget-bar-height: rem-calc(16) !default;
+$slider-widget-bar-border-width: 1px !default;
+$slider-widget-bar-border-style: solid !default;
+$slider-widget-bar-border-color: #ddd !default; 
+$slider-widget-bar-radius: $global-radius !default;
+$slider-widget-bar-bg-color: #fafafa !default;
+
+// These variabels define the slider handle styles
+$slider-widget-handle-width: rem-calc(32) !default;
+$slider-widget-handle-height: $slider-widget-handle-width !default;
+$slider-widget-handle-radius: $global-radius !default;
+$slider-widget-handle-bg-color: $primary-color !default;
+$slider-widget-handle-cursor: pointer !default;
+
+//
+// @mixins
+//
+
+@mixin-slider-widget-bar(
+  ) {
+
+}
+.slider-widget-bar {
+  width: $slider-widget-bar-width;
+  height: $slider-widget-bar-height;
+  border: $slider-widget-bar-border-width $slider-widget-bar-border-style $slider-widget-bar-border-color;
+  background: $slider-widget-bar-bg-color;
+}
+.slider-widget-handle {
+  display: block;
+  position: absolute;
+  left: rem-calc(8);
+  margin-top: rem-calc(-10);
+  width: $slider-widget-handle-width;
+  height: $slider-widget-handle-height;
+  background: $slider-widget-handle-bg-color;
+  @include radius($global-radius);
+  cursor: $slider-widget-handle-cursor;
+}
