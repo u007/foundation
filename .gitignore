@@ -34,3 +34,5 @@ docs/public/*
 *.ruby-version
 /docs2/public/*
 .settings
+compiler.jar
+

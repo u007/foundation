@@ -7,6 +7,14 @@ Foundation is the most advanced responsive front-end framework in the world. You
 
 To get started, check out <http://foundation.zurb.com/docs>
 
+## Fork updates
+Download latest compile.jar from:
+https://developers.google.com/closure/compiler/
+and copy compiler.jar to working directory.
+To compile, run:
+```
+sh compile.sh
+```
 
 ## Quickstart
 
